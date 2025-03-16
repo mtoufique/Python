@@ -1,0 +1,14 @@
+data=['sql','Java','java','pyspark','pyThon']
+
+def custom_reverse(input_list):
+    input_list=[i.lower() for i in input_list]
+    unique_list=[]
+    final_list=[]
+    for word in input_list:
+        if word not in unique_list:
+            unique_list.append(word)
+    reverse_list=unique_list[::-1]
+    for word in reverse_list:
+            final_list.append(word.upper()[0]+word.lower()[1:])
+    print(final_list)
+custom_reverse(data)
