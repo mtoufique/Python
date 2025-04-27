@@ -1,0 +1,6 @@
+input_str=[1,2,3,['Ram','Shyam'],45,43,['2','Jailer']]
+final_list=[]
+for i in input_str:
+    if type(i)==list:
+        final_list.extend(i)
+print(final_list)
